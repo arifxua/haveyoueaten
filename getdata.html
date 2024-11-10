@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Load URL in iframe</title>
+  <style>
+    /* Basic styling for the iframe */
+    iframe {
+      width: 100%;
+      height: 90vh;
+      border: none;
+    }
+  </style>
+</head>
+<body>
 
+  <h1>Load URL in iframe</h1>
+  <iframe id="contentFrame" src=""></iframe>
+
+  <script>
+    // Function to get URL parameters
+    function getUrlParameter(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
+
+    // Get 'url' parameter and load it into iframe
+    const url = getUrlParameter('url');
+    if (url) {
+      document.getElementById('contentFrame').src = url;
+    } else {
+      alert('No URL parameter found!');
+    }
+  </script>
+
+</body>
+</html>
