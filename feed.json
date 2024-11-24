@@ -1,11 +1,11 @@
 {
-    "filename":"webletter/HappyBirthday/"
-    "_comment":"[]"
+    "filename":"none"
+    "_comment":[
+        {
+            "default_value":"none"
+        },
+        {
+            "1":"webletter/HappyBirthday/"
+        }
+    ]
 }
-
-/*
-set default value "none"
-
-# webletter/HappyBirthday/
-
-*/
